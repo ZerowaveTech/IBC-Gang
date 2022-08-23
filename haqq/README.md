@@ -78,11 +78,11 @@ sudo systemctl restart haqqd && sudo journalctl -u haqqd -f -o cat
 
 ## Add wallet
 Create net wallet
-```console
+```
 haqqd keys add <wallet>
 ```
 or restore wallet
-```console
+```
 haqqd keys add <wallet> --recover
 ```
 ## Faucet
