@@ -17,7 +17,7 @@ go version
 ```
 
 ## Install Haqq
-```console 
+```
 NODENAME=<nodename>
 
 echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
