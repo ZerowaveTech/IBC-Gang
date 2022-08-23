@@ -17,13 +17,18 @@ go version
 ```
 
 ## Install Haqq
+Enter node name
 ```
 NODENAME=<nodename>
-
+```
+Export variables
+```
 echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 echo "export HAQQ_CHAIN_ID=haqq_53211-1" >> $HOME/.bash_profile
 source $HOME/.bash_profile
-
+```
+Install
+```
 git clone https://github.com/haqq-network/haqq
 cd haqq
 git checkout v1.0.3
@@ -53,7 +58,9 @@ sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0aISLM\"/" $HOME/.h
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.haqqd/config/config.toml
 
 haqqd tendermint unsafe-reset-all --home $HOME/.haqqd
-
+```
+Create service file
+```
 sudo tee /etc/systemd/system/haqqd.service > /dev/null <<EOF
 [Unit]
 Description=haqq
@@ -69,15 +76,16 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
-
+```
+Start
+```
 sudo systemctl daemon-reload
 sudo systemctl enable haqqd
 sudo systemctl restart haqqd && sudo journalctl -u haqqd -f -o cat
-
 ```
 
 ## Add wallet
-Create net wallet
+Create new wallet
 ```
 haqqd keys add <wallet>
 ```
