@@ -44,7 +44,7 @@ The monitoring system for your validator will be displayed
 1. In the Discord application, create a new server or channel in the group.
 2. In the server or channel settings, go to the "Integrations" item.
 3. Create a webhook, copy the URL, and save it.
-4. Open config file TenderDuty
+4. Open config file TenderDuty:
 ```
 nano $HOME/tenderduty/config.yml
 ```
@@ -53,7 +53,7 @@ nano $HOME/tenderduty/config.yml
 enabled: yes
 ```
 6. In the webhook field, paste the link received in Discord when creating the webhook.
-7. Save your changes
+7. Save your changes.
 8. Restart TenderDuty:
 ```
 docker restart tenderduty
