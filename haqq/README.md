@@ -105,8 +105,8 @@ Restore the wallet from which gentx was submitted
 ```
 haqqd keys add <wallet> --recover
 ```
-## Restore priv_validator_key.json
-Restore priv_validator_key.json obtained during genx generation in the .hack/config folder
+## Restore "priv_validator_key.json"
+Restore "priv_validator_key.json" obtained during genx generation in the ".haqqd/config" folder
 
 ## Create validator
 ```
