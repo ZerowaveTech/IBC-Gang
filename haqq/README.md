@@ -1,5 +1,5 @@
 # haqq
-Instructions for installing a node in the network haqq_54211-2. This instruction is relevant only if you submitted gentx at the right time ().
+Instructions for installing a node in the network haqq_54211-2. This instruction is relevant only if you submitted gentx at the right time.
 
 ## Preparing the server
 
