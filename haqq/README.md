@@ -1,5 +1,19 @@
 # haqq (haqq_54211-2)
-Instructions for installing a node in the network haqq_54211-2. This instruction is relevant only if you submitted gentx at the right time.
+Instructions for installing a node in the network haqq_54211-2. This instruction is relevant only if you submitted gentx at the right time
+
+Explorer: https://haqq.explorers.guru/validators
+
+**Official hardware requirements**:
+
+|CPU | RAM  | Storage  | 
+|----|------|----------|
+|   4| 32GB  | 500GB   |
+
+**Minimym hardware requirements**:
+
+|CPU | RAM  | Storage  | 
+|----|------|----------|
+|   4| 8GB  | 200GB   |
 
 ## Preparing the server
 
