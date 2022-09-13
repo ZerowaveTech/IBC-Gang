@@ -29,7 +29,7 @@ echo "export NODENAME=$NODENAME" >> $HOME/.bash_profile
 echo "export HAQQ_CHAIN_ID=haqq_54211-2" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
-Install
+Install, init, download genesis and addrbook
 ```
 git clone https://github.com/haqq-network/haqq
 cd haqq
@@ -42,6 +42,7 @@ haqqd config keyring-backend test
 haqqd init $NODENAME --chain-id $HAQQ_CHAIN_ID
 
 wget -qO $HOME/.haqqd/config/genesis.json "https://raw.githubusercontent.com/haqq-network/validators-contest/master/genesis.json"
+wget -qO $HOME/.haqqd/config/addrbook.json "https://raw.githubusercontent.com/lutasic/guides/main/haqq/addrbook.json"
 ```
 Add seed and peer
 ```
