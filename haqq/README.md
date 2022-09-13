@@ -136,7 +136,7 @@ haqqd tx staking create-validator \
   --chain-id $HAQQ_CHAIN_ID
 ```
 ## Migrate to Cosmovisor
-If, after installing the node, you need to migrate to the space viewer, [do the following](https://github.com/lutasic/guides/blob/main/haqq/Cosmovisor.md).
+If, after installing the node, you need to migrate to Cosmovisor, [do the following](https://github.com/lutasic/guides/blob/main/haqq/Cosmovisor.md).
 
 ## Delete node
 One command for delete node
