@@ -1,5 +1,5 @@
 # Migrate haqq (haqq_54211-2) to Cosmovisor
-If, after installing the node, you need to migrate to the space viewer, do the following.
+If, after installing the node, you need to migrate to Cosmovisor, do the following.
 
 Install Cosmovisor
 ```
