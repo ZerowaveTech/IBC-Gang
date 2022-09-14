@@ -28,7 +28,7 @@ nano $HOME/tenderduty/config.yml
 name network - change "aura" on "haqq"
 chainid: haqq_54211-2
 valoper_address: <your valoder address>
-URL for the endpoint: http://65.21.133.125:30657
+URL for the endpoint: http://65.21.133.125:30657 (or your RPC address)
 Delete example repeat host (https://some-other-node:443) 
 ```
 ## Start TenderDurt and check logs
