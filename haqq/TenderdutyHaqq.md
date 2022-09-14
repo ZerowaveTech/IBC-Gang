@@ -25,7 +25,7 @@ nano $HOME/tenderduty/config.yml
 ```
 Fill in the following parameters:
 
-- `change "aura" on "haqq"`
+- `change name network "aura" on "haqq"`
 - `chainid: haqq_54211-2`
 - `valoper_address: <your valoder address>`
 
