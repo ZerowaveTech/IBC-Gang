@@ -59,12 +59,12 @@ The monitoring system for your validator will be displayed
 ```
 nano $HOME/tenderduty/config.yml
 ```
-5. Enable notifications in the "Discord settings" block:
+5. In a block with a chain enable notifications in the "Discord settings" block:
 ```
 enabled: yes
 ```
 6. In the webhook field, paste the link received in Discord when creating the webhook.
-![5](https://user-images.githubusercontent.com/49861610/190073912-5626705e-8f65-472a-866c-d874bc189ecc.png)
+![1](https://user-images.githubusercontent.com/49861610/190135033-ae1afeb0-8df8-46e0-8961-883bb0e2659c.png)
 8. Save your changes.
 9. Restart TenderDuty:
 ```
