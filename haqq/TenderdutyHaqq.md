@@ -48,7 +48,7 @@ echo -e "\033[0;32mhttp://$(wget -qO- eth0.me):8888/\033[0m"
 ```
 Copy the resulting output and paste it into the browser. Example: http://1.1.1.1:8888
 The monitoring system for your validator will be displayed
-![3](https://user-images.githubusercontent.com/49861610/190073316-f380b2e4-f894-49b3-9e08-8c40910bb5c9.png)
+![2](https://user-images.githubusercontent.com/49861610/190177410-4b38e25d-1af1-47db-84a6-1142755f3530.png)
 
 ## Configuring Discord notifications
 1. In the Discord application, create a new server or channel in the group.
