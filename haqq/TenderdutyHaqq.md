@@ -24,15 +24,15 @@ docker run --rm ghcr.io/blockpane/tenderduty:latest -example-config >config.yml
 nano $HOME/tenderduty/config.yml
 ```
 Fill in the following parameters:
-```
-name network - change "aura" on "haqq"
-chainid: haqq_54211-2
-valoper_address: <your valoder address>
-```
+
+`name network` - change "aura" on "haqq"
+`chainid: haqq_54211-2`
+`valoper_address: <your valoder address>`
+
 ![1](https://user-images.githubusercontent.com/49861610/190073105-6c0d94ca-6b29-4a23-9778-79a4e44d27ae.png)
 
 ```
-URL for the endpoint: http://65.21.133.125:30657 (or your RPC address)
+URL for the endpoint: `http://65.21.133.125:30657 (or your RPC address)`
 Delete example repeat host (https://some-other-node:443) 
 ```
 ![2](https://user-images.githubusercontent.com/49861610/190073121-3175c0f6-d9b7-4ddb-9687-84e7f6124192.png)
@@ -61,7 +61,7 @@ The monitoring system for your validator will be displayed
 ```
 nano $HOME/tenderduty/config.yml
 ```
-5. In a block with a chain enable notifications in the "Discord settings" block:
+5. In a block with a chain enable notifications in the `Discord settings` block:
 ```
 enabled: yes
 ```
