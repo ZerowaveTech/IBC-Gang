@@ -9,7 +9,7 @@ Explorer: https://haqq.explorers.guru/validators
 |----|------|----------|
 |   4| 32GB  | 500GB   |
 
-**Minimym hardware requirements**:
+**Minimum hardware requirements**:
 
 |CPU | RAM  | Storage  | 
 |----|------|----------|
