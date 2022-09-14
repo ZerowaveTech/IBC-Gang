@@ -23,7 +23,7 @@ docker run --rm ghcr.io/blockpane/tenderduty:latest -example-config >config.yml
 ```
 nano $HOME/tenderduty/config.yml
 ```
-## Fill in the following parameters:
+Fill in the following parameters:
 ```
 name network - change "aura" on "haqq"
 chainid: haqq_54211-2
