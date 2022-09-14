@@ -33,6 +33,7 @@ Fill in the following parameters:
 
 - URL for the endpoint: `http://65.21.133.125:30657 (or your RPC address)`
 - Delete example repeat host `https://some-other-node:443`
+
 ![2](https://user-images.githubusercontent.com/49861610/190073121-3175c0f6-d9b7-4ddb-9687-84e7f6124192.png)
 
 ## Start TenderDurt and check logs
