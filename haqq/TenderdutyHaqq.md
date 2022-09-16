@@ -1,9 +1,4 @@
 # Installing and configuring notifications using TenderDuty
-## Preparing the server
-```
-sudo apt update && sudo apt upgrade -y
-sudo apt install curl build-essential git wget jq make gcc tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
-```
 ## Install Docker (one command)
 ```
 apt update && \
