@@ -26,10 +26,10 @@ Fill in the following parameters:
 
 ![1](https://user-images.githubusercontent.com/49861610/190073105-6c0d94ca-6b29-4a23-9778-79a4e44d27ae.png)
 
-- URL for the endpoint: `http://65.21.133.125:30657 (or your RPC address)`
+- URL for the endpoint: `https://rpc.tm.testedge2.haqq.network:443 (or your RPC address)`
 - Delete example repeat host url `https://some-other-node:443`
 
-![2](https://user-images.githubusercontent.com/49861610/190073121-3175c0f6-d9b7-4ddb-9687-84e7f6124192.png)
+![1](https://user-images.githubusercontent.com/49861610/192777013-d1914b9c-58ae-41ec-b610-50d5491d909e.png)
 
 ## Start TenderDurt and check logs
 ```
