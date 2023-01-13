@@ -26,7 +26,7 @@ Fill in the following parameters:
 
 ![1](https://user-images.githubusercontent.com/49861610/212419657-ac18d179-b797-4f45-b6bb-752841a5c589.png)
 
-- URL for the endpoint: `https://okp4-rpc.cagie.tech:443 (or your RPC address)`
+- URL for the endpoint: `https://okp4-rpc.cagie.tech:443, https://okp4-testnet.rpc.kjnodes.com:443 (or your RPC address)`
 - Delete example repeat host url `https://some-other-node:443`
 
 ![2](https://user-images.githubusercontent.com/49861610/212422043-6f5b9ce5-b6a4-412e-88fe-549e00f5ab09.png)
