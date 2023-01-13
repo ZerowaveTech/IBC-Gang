@@ -1,4 +1,4 @@
-# Installing and configuring notifications using TenderDuty
+# Installing and configuring notifications using TenderDuty for OKP4 Network
 ## Install Docker (one command)
 ```
 apt update && \
