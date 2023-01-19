@@ -1,4 +1,4 @@
-# Installing and configuring notifications using TenderDuty
+# Installing and configuring notifications using TenderDuty for OKP4 Network
 ## Install Docker (one command)
 ```
 apt update && \
@@ -20,16 +20,16 @@ nano $HOME/tenderduty/config.yml
 ```
 Fill in the following parameters:
 
-- `change name network "aura" on "haqq"`
-- `chainid: haqq_54211-2`
+- `change name network "Osmosis" on "Okp4"`
+- `chainid: okp4-nemeton-1`
 - `valoper_address: <your valoder address>`
 
-![1](https://user-images.githubusercontent.com/49861610/190073105-6c0d94ca-6b29-4a23-9778-79a4e44d27ae.png)
+![1](https://user-images.githubusercontent.com/49861610/212419657-ac18d179-b797-4f45-b6bb-752841a5c589.png)
 
-- URL for the endpoint: `https://rpc.tm.testedge2.haqq.network:443 (or your RPC address)`
+- URL for the endpoint: `https://okp4-rpc.cagie.tech:443, https://okp4-testnet.rpc.kjnodes.com:443 (or your RPC address)`
 - Delete example repeat host url `https://some-other-node:443`
 
-![1](https://user-images.githubusercontent.com/49861610/192777013-d1914b9c-58ae-41ec-b610-50d5491d909e.png)
+![2](https://user-images.githubusercontent.com/49861610/212422043-6f5b9ce5-b6a4-412e-88fe-549e00f5ab09.png)
 
 ## Start TenderDurt and check logs
 ```
@@ -43,14 +43,14 @@ echo -e "\033[0;32mhttp://$(wget -qO- eth0.me):8888/\033[0m"
 ```
 Copy the resulting output and paste it into the browser. Example: http://1.1.1.1:8888
 The monitoring system for your validator will be displayed
-![2](https://user-images.githubusercontent.com/49861610/190177410-4b38e25d-1af1-47db-84a6-1142755f3530.png)
+![3](https://user-images.githubusercontent.com/49861610/212422230-d66bbf96-5ab7-4e32-8e8d-636dfee6ece0.png)
 
 ## Configuring Discord notifications
 1. In the Discord application, create a new server or channel in the group.
 2. In the server or channel settings, go to the "Integrations" item.
 3. Create a webhook, copy the URL, and save it.
 
-![4](https://user-images.githubusercontent.com/49861610/190073720-5880f52c-f6ae-4266-8ece-1454eacdb768.png)
+![4](https://user-images.githubusercontent.com/49861610/212422620-d8b765c7-2257-4911-a194-710f750c182d.png)
 
 5. Open config file TenderDuty:
 ```
