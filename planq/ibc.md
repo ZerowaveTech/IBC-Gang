@@ -200,7 +200,7 @@ hermes health-check
 Before you proceed with this step, please make sure you have created and funded with tokens seperate wallets on each chain.
 When creating a wallet in Planq, you must use the command:
 ```
-planqd keys add wallet --coin-type 118
+planqd keys add <wallet_name> --coin-type 118
 ```
 
 Add Planq wallet to Hermes:
@@ -294,3 +294,12 @@ Gravity Bridge:
 ```
 hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain planq_7070-2 --src-chain gravity-bridge-3 --src-port transfer --src-channel channel-102 --amount <amount planq> --denom ibc/2782B87D755389B565D59F15E202E6E3B8B3E1408034D2FAA4E02A0CA10911B2
 ```
+
+## Check transaction
+You can see your transactions here:
+https://www.mintscan.io/osmosis/relayers/channel-492
+https://www.mintscan.io/gravity-bridge/relayers/channel-102
+https://www.mintscan.io/cosmos/relayers/channel-446
+https://explorer.planq.network/accounts/<wallet_address>
+
+Your address should appear in the "Operator Address" section (on mintscan). After sending transactions, it may take some time for it to appear there.
