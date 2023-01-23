@@ -20,7 +20,9 @@ source $HOME/.bash_profile
 ```
 
 ## Create hermes config
-Generate hermes config file using variables we have defined above
+Generate hermes config file.
+For Planq, use your values rpc_addr, grpc_addr, websocket_addr.
+Also everywhere replace "memo_prefix" with your own value.
 ```
 sudo tee $HOME/.hermes/config.toml > /dev/null <<EOF
 # The global section has parameters that apply globally to the relayer operation.
