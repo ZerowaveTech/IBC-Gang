@@ -258,7 +258,8 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
-
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable hermesd
 sudo systemctl restart hermesd && journalctl -u hermesd -f -o cat
