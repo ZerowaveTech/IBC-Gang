@@ -268,7 +268,7 @@ sudo systemctl restart hermesd && journalctl -u hermesd -f -o cat
 ```
 
 ## Send transaction
-###Send Planq token from Planq to destination chain (osmosis, cosmos, gravity bridge):
+### Send Planq token from Planq to destination chain (osmosis, cosmos, gravity bridge):
 Osmosis:
 ```
 hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain osmosis-1 --src-chain planq_7070-2 --src-port transfer --src-channel channel-1 --amount <amount planq> --denom aplanq
@@ -281,7 +281,7 @@ Gravity Bridge:
 ```
 hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain gravity-bridge-3 --src-chain planq_7070-2 --src-port transfer --src-channel channel-0 --amount <amount planq> --denom aplanq
 ```
-###Send Planq token from Osmosis, Cosmos, Gravity Bridge to Planq:
+### Send Planq token from Osmosis, Cosmos, Gravity Bridge to Planq:
 Osmosis:
 ```
 hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain planq_7070-2 --src-chain osmosis-1 --src-port transfer --src-channel channel-492 --amount <amount planq> --denom ibc/B1E0166EA0D759FDF4B207D1F5F12210D8BFE36F2345CEFC76948CE2B36DFBAF
