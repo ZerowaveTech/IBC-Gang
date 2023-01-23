@@ -269,15 +269,15 @@ sudo systemctl restart hermesd && journalctl -u hermesd -f -o cat
 ###Send Planq token from Planq to destination chain (osmosis, cosmos, gravity bridge):
 Osmosis:
 ```
-hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 2 --dst-chain osmosis-1 --src-chain planq_7070-2 --src-port transfer --src-channel channel-1 --amount <amount planq> --denom aplanq
+hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain osmosis-1 --src-chain planq_7070-2 --src-port transfer --src-channel channel-1 --amount <amount planq> --denom aplanq
 ```
 Cosmos:
 ```
-hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 2 --dst-chain cosmoshub-4 --src-chain planq_7070-2 --src-port transfer --src-channel channel-2 --amount <amount planq> --denom aplanq
+hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain cosmoshub-4 --src-chain planq_7070-2 --src-port transfer --src-channel channel-2 --amount <amount planq> --denom aplanq
 ```
 Gravity Bridge:
 ```
-hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 2 --dst-chain gravity-bridge-3 --src-chain planq_7070-2 --src-port transfer --src-channel channel-0 --amount <amount planq> --denom aplanq
+hermes tx ft-transfer --timeout-height-offset 10 --number-msgs 1 --dst-chain gravity-bridge-3 --src-chain planq_7070-2 --src-port transfer --src-channel channel-0 --amount <amount planq> --denom aplanq
 ```
 ###Send Planq token from Osmosis, Cosmos, Gravity Bridge to Planq:
 Osmosis:
