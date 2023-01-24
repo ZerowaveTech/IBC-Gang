@@ -26,9 +26,15 @@ cd hermes
 git checkout v1.2.0
 cargo build --release --bin hermes --locked
 chmod +x target/release/hermes
+```
+If Go is installed
+```
 mv target/release/hermes /root/go/bin/
 ```
-
+If Go is not installed
+```
+mv target/release/hermes /usr/local/bin
+```
 ## Create hermes config
 Generate hermes config file.
 For Planq, use your values rpc_addr, grpc_addr, websocket_addr.
