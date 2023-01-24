@@ -105,14 +105,15 @@ list = [
   ['transfer', 'channel-2'], # cosmoshub-4
   ['transfer', 'channel-1'], # osmosis
   ['transfer', 'channel-0'], # gravitybridge
+  ['transfer', 'channel-23'], # kujira
 ]
 
 ############################################################### COSMOS ###############################################################
 [[chains]]
 id = 'cosmoshub-4'
-rpc_addr = 'https://cosmos-rpc.polkachu.com:443'
-grpc_addr = 'http://cosmos-grpc.polkachu.com:14990'
-websocket_addr = 'wss://rpc.cosmos.bh.rocks:443/websocket'
+rpc_addr = '<rpc address>'
+grpc_addr = '<grpc address>'
+websocket_addr = '<websocket address>'
 
 rpc_timeout = '30s'
 account_prefix = 'cosmos'
@@ -140,9 +141,9 @@ list = [
 ############################################################### OSMOSIS ###############################################################
 [[chains]]
 id = 'osmosis-1'
-rpc_addr = 'https://osmosis-rpc.polkachu.com:443'
-grpc_addr = 'http://osmosis-grpc.polkachu.com:12590'
-websocket_addr = 'wss://osmosis-rpc.polkachu.com:443/websocket'
+rpc_addr = '<rpc address>'
+grpc_addr = '<grpc address>'
+websocket_addr = '<websocket address>'
 
 rpc_timeout = '30s'
 account_prefix = 'osmo'
@@ -170,9 +171,9 @@ list = [
 ############################################################### GRAVITY BRIDGE ###############################################################
 [[chains]]
 id = 'gravity-bridge-3'
-rpc_addr = 'https://gravity-rpc.polkachu.com:443'
-grpc_addr = 'http://gravity-grpc.polkachu.com:14290'
-websocket_addr = 'wss://rpc.gravity.bh.rocks:443/websocket'
+rpc_addr = '<rpc address>'
+grpc_addr = '<grpc address>'
+websocket_addr = '<websocket address>'
 
 rpc_timeout = '30s'
 account_prefix = 'gravity'
@@ -195,6 +196,36 @@ trust_threshold = { numerator = '1', denominator = '3' }
 policy = 'allow'
 list = [
   ['transfer', 'channel-102'], # Planq
+]
+
+############################################################### KUJIRA ###############################################################
+[[chains]]
+id = 'kaiyo-1'
+rpc_addr = '<rpc address>'
+grpc_addr = '<grpc address>'
+websocket_addr = '<websocket address>'
+
+rpc_timeout = '20s'
+account_prefix = 'kujira'
+key_name = 'relayer'
+address_type = { derivation = 'cosmos' }
+store_prefix = 'ibc'
+default_gas = 300000
+max_gas = 2000000
+gas_price = { price = 0.00125, denom = 'ukuji' }
+gas_multiplier = 1.2
+max_msg_num = 30
+max_tx_size = 2000000
+clock_drift = '45s'
+max_block_time = '10s'
+trusting_period = '10days'
+memo_prefix = 'Relayed by cagie'
+trust_threshold = { numerator = '1', denominator = '3' }
+
+[chains.packet_filter]
+policy = 'allow'
+list = [
+  ['transfer', 'channel-51'], # Planq
 ]
 
 EOF
