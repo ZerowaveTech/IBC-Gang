@@ -117,9 +117,9 @@ list = [
 ############################################################### COSMOS ###############################################################
 [[chains]]
 id = 'cosmoshub-4'
-rpc_addr = '<rpc address>'
-grpc_addr = '<grpc address>'
-websocket_addr = '<websocket address>'
+rpc_addr = 'https://cosmos-rpc.polkachu.com:443'
+grpc_addr = 'http://cosmos-grpc.polkachu.com:14990'
+websocket_addr = 'wss://rpc.cosmos.bh.rocks:443/websocket'
 
 rpc_timeout = '30s'
 account_prefix = 'cosmos'
@@ -147,9 +147,9 @@ list = [
 ############################################################### OSMOSIS ###############################################################
 [[chains]]
 id = 'osmosis-1'
-rpc_addr = '<rpc address>'
-grpc_addr = '<grpc address>'
-websocket_addr = '<websocket address>'
+rpc_addr = 'https://osmosis-rpc.polkachu.com:443'
+grpc_addr = 'http://osmosis-grpc.polkachu.com:12590'
+websocket_addr = 'wss://osmosis-rpc.polkachu.com:443/websocket'
 
 rpc_timeout = '30s'
 account_prefix = 'osmo'
@@ -177,9 +177,9 @@ list = [
 ############################################################### GRAVITY BRIDGE ###############################################################
 [[chains]]
 id = 'gravity-bridge-3'
-rpc_addr = '<rpc address>'
-grpc_addr = '<grpc address>'
-websocket_addr = '<websocket address>'
+rpc_addr = 'https://gravity-rpc.polkachu.com:443'
+grpc_addr = 'http://gravity-grpc.polkachu.com:14290'
+websocket_addr = 'wss://rpc.gravity.bh.rocks:443/websocket'
 
 rpc_timeout = '30s'
 account_prefix = 'gravity'
@@ -204,12 +204,42 @@ list = [
   ['transfer', 'channel-102'], # Planq
 ]
 
+############################################################### UMEE ###############################################################
+[[chains]]
+id = 'umee-1'
+rpc_addr = 'https://umee-rpc.polkachu.com:443'
+grpc_addr = 'http://umee-grpc.polkachu.com:13690'
+websocket_addr = 'wss://rpc-umee-ia.cosmosia.notional.ventures:443/websocket'
+
+rpc_timeout = '20s'
+account_prefix = 'umee'
+key_name = 'relayer'
+address_type = { derivation = 'cosmos' }
+store_prefix = 'ibc'
+default_gas = 100000
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'uumee' }
+gas_multiplier = 1.2
+max_msg_num = 30
+max_tx_size = 1800000
+clock_drift = '15s'
+max_block_time = '10s'
+trusting_period = '7days'
+memo_prefix = 'Relayed by cagie'
+trust_threshold = { numerator = '1', denominator = '3' }
+
+[chains.packet_filter]
+policy = 'allow'
+list = [
+  ['transfer', 'channel-41'], # Planq
+]
+
 ############################################################### KUJIRA ###############################################################
 [[chains]]
 id = 'kaiyo-1'
-rpc_addr = '<rpc address>'
-grpc_addr = '<grpc address>'
-websocket_addr = '<websocket address>'
+rpc_addr = 'https://kujira-rpc.polkachu.com:443'
+grpc_addr = 'http://kujira-grpc.polkachu.com:11890'
+websocket_addr = 'wss://rpc-kujira.starsquid.io:443/websocket'
 
 rpc_timeout = '20s'
 account_prefix = 'kujira'
@@ -310,9 +340,10 @@ hermes keys add --chain "$CHAIN_ID" --mnemonic-file $HOME/.hermes.mnemonic
 rm $HOME/.hermes.mnemonic
 ```
 
-## Enabling an index on a Planq node
+## Enabling an index on a node
 
-An index must be included on the Planq node (index = "kv"). To enable the index, use the command:
+Make sure the index is enabled on all nodes (Cosmos, Osmosis, Gravity Bridge, Umee, Kujira) you plan to work with (index = "kv").
+For example, to include an index on a Planq, use the command:
 ```
 sed -i -e 's|^indexer *=.*|indexer = "kv"|' $HOME/.planqd/config/config.toml
 ```
