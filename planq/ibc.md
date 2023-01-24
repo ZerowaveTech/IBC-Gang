@@ -290,6 +290,26 @@ hermes keys add --chain "$CHAIN_ID" --mnemonic-file $HOME/.hermes.mnemonic
 rm $HOME/.hermes.mnemonic
 ```
 
+Add Umee wallet to Hermes:
+```
+MNEMONIC='...'
+CHAIN_ID=umee-1
+
+echo "$MNEMONIC" > $HOME/.hermes.mnemonic
+hermes keys add --chain "$CHAIN_ID" --mnemonic-file $HOME/.hermes.mnemonic
+rm $HOME/.hermes.mnemonic
+```
+
+Add Kujira wallet to Hermes:
+```
+MNEMONIC='...'
+CHAIN_ID=kaiyo-1
+
+echo "$MNEMONIC" > $HOME/.hermes.mnemonic
+hermes keys add --chain "$CHAIN_ID" --mnemonic-file $HOME/.hermes.mnemonic
+rm $HOME/.hermes.mnemonic
+```
+
 ## Enabling an index on a Planq node
 
 An index must be included on the Planq node (index = "kv"). To enable the index, use the command:
